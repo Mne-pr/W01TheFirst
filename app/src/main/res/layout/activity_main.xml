@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--바꾼것 - LinearLayout으로 변경, orientation을 vertical로 추가함-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    W01 글자와 버튼을 띄워봤음-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!" />-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="클릭하면 뭐 됨?" />-->
+
+<!--    W02 카운터-->
+    <TextView
+        android:id="@+id/numText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="100sp"
+        android:background="#ff0"
+        android:gravity="center"
+        android:padding="50dp"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="증가" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="감소" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnInit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="초기화" />
+
+</LinearLayout>
